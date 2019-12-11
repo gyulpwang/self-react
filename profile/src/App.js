@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 //import { Button } from 'reactstrap';
-import Header from './components/Header';
+//import Header from './components/Header';
+import Header from './components/js/Header';
 
 class App extends Component{
   render() {
