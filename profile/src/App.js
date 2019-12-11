@@ -1,21 +1,14 @@
 import React, {Component} from 'react';
-import { Button } from 'reactstrap';
+//import { Button } from 'reactstrap';
+import Header from './components/Header';
 
 class App extends Component{
-  render(){
+  render() {
     return (
-      <div>
-        Profile Initial Test
         <div>
-        <Button color="primary">primary</Button>{' '}
-        <Button color="secondary">secondary</Button>{' '}
-        <Button color="success">success</Button>{' '}
-        <Button color="info">info</Button>{' '}
-        <Button color="warning">warning</Button>{' '}
-        <Button color="danger">danger</Button>{' '}
-        <Button color="link">link</Button>
-      </div>
-      </div>
+            <Header/>
+            {this.props.children}
+        </div>
     );
   }
 }
