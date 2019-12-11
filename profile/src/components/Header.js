@@ -26,7 +26,7 @@ const Header = (props, context) => {
 
 Header.contextTypes = {
     router: function () {
-    return React.PropTypes.func.isRequired;
+        return React.PropTypes.object;
     }
 }
 
