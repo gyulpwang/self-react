@@ -3,16 +3,40 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import * as serviceWorker from './serviceWorker';
 
+//import './index.css';
+import 'bootstrap/dist/css/bootstrap.css'
+import './components/css/resume.min.css'
+import './components/css/resume.css'
+import './components/vendor/bootstrap/css/bootstrap.min.css'
+//import 'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700'
+//import 'https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i'
+
 import App from './App';
 import Home from './containers/Home';
 import About from './containers/About';
-import Posts from './containers/Posts';
-import Post from './containers/Post';
-
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css'
+import Awards from './containers/Awards';
+import Education from './containers/Education';
+import Experience from './containers/Experience';
+import Interests from './containers/Interests';
+import Skills from './containers/Skills';
 
 ReactDOM.render(
+  <Router history={browserHistory}>
+    <Route path="/" component={App}>
+      <IndexRoute component={Home}/>
+      <Route path="about" component={About}/>
+      <Route path="awards" component={Awards}/>
+      <Route path="education" component={Education}/>
+      <Route path="experience" component={Experience}/>
+      <Route path="interests" component={Interests}/>
+      <Route path="skills" component={Skills}/>
+    </Route>
+  </Router>,
+  document.getElementById('root')
+);
+
+/* AS-IS */
+/*ReactDOM.render(
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <IndexRoute component={Home}/>
@@ -23,7 +47,7 @@ ReactDOM.render(
     </Route>
   </Router>,
   document.getElementById('root')
-);
+);*/
 
 /*
 지금은 Post 컴포넌트가 Posts 내부에 위치하게 하고 싶기 때문에 이렇게 했지만, 

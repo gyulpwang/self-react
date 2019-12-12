@@ -1,15 +1,14 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 //import { Button } from 'reactstrap';
-//import Header from './components/Header';
-import Header from './components/js/Header';
+import Header from './containers/Header';
 
 class App extends Component{
   render() {
     return (
-        <div>
+        <Fragment>
             <Header/>
             {this.props.children}
-        </div>
+        </Fragment>
     );
   }
 }
