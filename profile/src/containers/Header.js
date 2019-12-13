@@ -1,10 +1,12 @@
 import React, { Fragment } from 'react';
 import { Link } from 'react-router';
+import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
+import ExperienceLinks from '../containers/experience/ExperienceLinks'
 import profile from '../components/img/profile.jpg';
 
-const MenuItem = ({active, children, to}) => (
-    <Link to={to} className="nav-link js-scroll-trigger">
+const MenuItem = ({active, children, to, id}) => (
+    <Link id={id} to={to} className="nav-link js-scroll-trigger">
         {children}
     </Link>
 );
@@ -12,6 +14,18 @@ const MenuItem = ({active, children, to}) => (
 const Header = (props, context) => {
     const { router } = context;
     
+    const toggleBackgroundStyle = {
+        backgroundColor : '#007bff',
+        borderColor : '#007bff',
+        color : 'rgba(255,255,255,.75)'
+    };
+
+    const SubMenuStyle = {
+        textAlign: 'left',
+        marginLeft: '50px',
+        fontSize: 'smaller'
+    };    
+
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
@@ -32,7 +46,14 @@ const Header = (props, context) => {
                             <MenuItem to={'/about'} active={router.isActive('/about')}>About</MenuItem>
                         </li>
                         <li className="nav-item">
-                            <MenuItem to={'/experience'} active={router.isActive('/experience')}>Experience</MenuItem>
+                            <MenuItem id={'toggler'}>Experience</MenuItem>
+                            <UncontrolledCollapse toggler="#toggler">
+                                <Card style={toggleBackgroundStyle}>
+                                    <CardBody style={SubMenuStyle}>
+                                        <ExperienceLinks/>
+                                    </CardBody>
+                                </Card>
+                            </UncontrolledCollapse>
                         </li>
                         <li className="nav-item">
                             <MenuItem to={'/education'} active={router.isActive('/education')}>Education</MenuItem>

@@ -21,6 +21,7 @@ import Home from './containers/Home';
 import About from './containers/About';
 import Awards from './containers/Awards';
 import Education from './containers/Education';
+import Experiences from './containers/Experiences';
 import Experience from './containers/Experience';
 import Interests from './containers/Interests';
 import Skills from './containers/Skills';
@@ -39,7 +40,8 @@ ReactDOM.render(
               <hr class="m-0" />
               <Route path="education" component={Education}/>
               <hr class="m-0" />
-              <Route path="experience" component={Experience}/>
+              <Route path="experience" component={Experiences}/>
+              <Route path="experience/:id" component={Experience}/>
               <hr class="m-0" />
               <Route path="interests" component={Interests}/>
               <hr class="m-0" />
@@ -83,8 +85,4 @@ ReactDOM.render(
 );
 */
 
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
