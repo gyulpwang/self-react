@@ -2,63 +2,63 @@ import React from 'react';
 
 const Skills = () => {
     return (
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-            <div class="w-100">
-            <h2 class="mb-5">Skills</h2>
+        <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+            <div className="w-100">
+            <h2 className="mb-5">Skills</h2>
 
-            <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-            <ul class="list-inline dev-icons">
-                <li class="list-inline-item">
-                <i class="fab fa-html5"></i>
+            <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+            <ul className="list-inline dev-icons">
+                <li className="list-inline-item">
+                <i className="fab fa-html5"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-css3-alt"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-css3-alt"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-js-square"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-js-square"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-angular"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-angular"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-react"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-react"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-node-js"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-node-js"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-sass"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-sass"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-less"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-less"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-wordpress"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-wordpress"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-gulp"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-gulp"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-grunt"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-grunt"></i>
                 </li>
-                <li class="list-inline-item">
-                <i class="fab fa-npm"></i>
+                <li className="list-inline-item">
+                <i className="fab fa-npm"></i>
                 </li>
             </ul>
 
-            <div class="subheading mb-3">Workflow</div>
-            <ul class="fa-ul mb-0">
+            <div className="subheading mb-3">Workflow</div>
+            <ul className="fa-ul mb-0">
                 <li>
-                <i class="fa-li fa fa-check"></i>
+                <i className="fa-li fa fa-check"></i>
                 Mobile-First, Responsive Design</li>
                 <li>
-                <i class="fa-li fa fa-check"></i>
+                <i className="fa-li fa fa-check"></i>
                 Cross Browser Testing &amp; Debugging</li>
                 <li>
-                <i class="fa-li fa fa-check"></i>
+                <i className="fa-li fa fa-check"></i>
                 Cross Functional Teams</li>
                 <li>
-                <i class="fa-li fa fa-check"></i>
+                <i className="fa-li fa fa-check"></i>
                 Agile Development &amp; Scrum</li>
             </ul>
             </div>

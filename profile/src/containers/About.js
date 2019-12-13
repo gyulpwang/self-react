@@ -2,29 +2,26 @@ import React from 'react';
 
 const About = () => {
     return (
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-            <div class="w-100">
-            <h1 class="mb-0">Clarence
-                <span class="text-primary">Taylor</span>
-            </h1>
-            <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                <a href="mailto:name@email.com">name@email.com</a>
-            </div>
-            <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
-            <div class="social-icons">
-                <a href="#">
-                <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="#">
-                <i class="fab fa-github"></i>
-                </a>
-                <a href="#">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#">
-                <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
+        <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+            <div className="w-100">
+                <h1 className="mb-0">Gyul
+                    <span className="text-primary">Pwang</span>
+                </h1>
+                <div className="subheading mb-5">+82-10-4567-9327 ·
+                    <a href="mailto:name@email.com"> rbfla927@gmail.com</a>
+                </div>
+                <p className="lead mb-5">쇼핑을 사랑하는 개발자 성규림입니다.</p>
+                <div className="social-icons">
+                    <a href="https://www.linkedin.com/in/gyulpwang">
+                        <i className="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/gyulpwang">
+                        <i className="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100003401716592">
+                        <i className="fab fa-facebook-f"></i>
+                    </a>
+                </div>
             </div>
         </section>
     );
