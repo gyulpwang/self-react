@@ -9,6 +9,12 @@ import './components/css/resume.css'
 import './components/vendor/bootstrap/css/bootstrap.min.css'
 import './components/font/font.css'
 import './components/vendor/fontawesome-free/css/all.css'
+
+/*
+import jquery from 'jquery';
+window.$ = window.jQuery = jquery;
+const $ = window.$;
+*/
 /*
 import './components/vendor/jquery/jquery.min.js'
 import './components/vendor/bootstrap/js/bootstrap.bundle.min.js'
@@ -25,8 +31,6 @@ import Experiences from './containers/Experiences';
 import Experience from './containers/Experience';
 import Interests from './containers/Interests';
 import Skills from './containers/Skills';
-
-//import {Home, About, Awards, Education, Experience, Interests, Skills} from 'containers';
 
 ReactDOM.render(
     <Router history={browserHistory}>
