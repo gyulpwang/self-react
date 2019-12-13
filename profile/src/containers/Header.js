@@ -4,6 +4,7 @@ import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
 import ExperienceLinks from '../containers/experience/ExperienceLinks'
 import profile from '../components/img/profile.jpg';
+import '../components/css/custom.css';
 
 const MenuItem = ({active, children, to, id}) => (
     <Link id={id} to={to} className="nav-link js-scroll-trigger">
@@ -13,18 +14,6 @@ const MenuItem = ({active, children, to, id}) => (
 
 const Header = (props, context) => {
     const { router } = context;
-    
-    const toggleBackgroundStyle = {
-        backgroundColor : '#007bff',
-        borderColor : '#007bff',
-        color : 'rgba(255,255,255,.75)'
-    };
-
-    const SubMenuStyle = {
-        textAlign: 'left',
-        marginLeft: '50px',
-        fontSize: 'smaller'
-    };    
 
     return (
         <Fragment>
@@ -48,8 +37,8 @@ const Header = (props, context) => {
                         <li className="nav-item">
                             <MenuItem id={'toggler'}>Experience</MenuItem>
                             <UncontrolledCollapse toggler="#toggler">
-                                <Card style={toggleBackgroundStyle}>
-                                    <CardBody style={SubMenuStyle}>
+                                <Card className="toggle-background-style">
+                                    <CardBody className="sub-menu-style">
                                         <ExperienceLinks/>
                                     </CardBody>
                                 </Card>
