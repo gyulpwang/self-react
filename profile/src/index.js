@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import * as serviceWorker from './serviceWorker';
 
-import 'bootstrap/dist/css/bootstrap.css'
-import './components/css/resume.min.css'
-import './components/css/resume.css'
+//import 'bootstrap/dist/css/bootstrap.css'
 import './components/vendor/bootstrap/css/bootstrap.min.css'
+import './components/css/resume.min.css'
 import './components/font/font.css'
 import './components/vendor/fontawesome-free/css/all.css'
+
 
 /*
 import jquery from 'jquery';
