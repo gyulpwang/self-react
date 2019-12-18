@@ -7,6 +7,13 @@ const Skills = () => {
             <h2 className="mb-5">Skills</h2>
 
             <div className="subheading mb-3">Programming Languages &amp; Tools</div>
+
+            보유기술	Frontend	JavaScript, jQuery, NetJS(ExtJS), HTML, CSS, ReactJS
+                        Backend	    Java, JSP, VTL
+                        Database	Oracle
+                        Tool	    Eclipse, PL/SQL Developer, Jenkins, SVN, SecureCRT, Visual Studio Code
+
+
             <ul className="list-inline dev-icons">
                 <li className="list-inline-item">
                 <i className="fab fa-html5"></i>

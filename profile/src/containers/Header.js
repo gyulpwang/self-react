@@ -33,6 +33,9 @@ const Header = (props, context) => {
                             <MenuItem to={'/about'} active={router.isActive('/about')}>About</MenuItem>
                         </li>
                         <li className="nav-item">
+                            <MenuItem to={'/history'} active={router.isActive('/history')}>History</MenuItem>
+                        </li>
+                        <li className="nav-item">
                             <MenuItem id={'toggler'}>Experience</MenuItem>
                             <UncontrolledCollapse toggler="#toggler">
                                 <Card className="toggle-background-style">
@@ -49,11 +52,19 @@ const Header = (props, context) => {
                             <MenuItem to={'/skills'} active={router.isActive('/skills')}>Skills</MenuItem>
                         </li>
                         <li className="nav-item">
+                            <MenuItem to={'/certifications'} active={router.isActive('/certifications')}>Certifications</MenuItem>
+                        </li>
+                        <li className="nav-item">
+                            <MenuItem to={'/activities'} active={router.isActive('/activities')}>Activities</MenuItem>
+                        </li>
+                        {/*
+                        <li className="nav-item">
                             <MenuItem to={'/interests'} active={router.isActive('/interests')}>Interests</MenuItem>
                         </li>
                         <li className="nav-item">
                             <MenuItem to={'/awards'} active={router.isActive('/awards')}>Awards</MenuItem>
                         </li>
+                        */}
                     </ul>
                 </div>
             </nav>

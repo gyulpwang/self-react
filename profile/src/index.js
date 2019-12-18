@@ -25,12 +25,15 @@ import App from './App';
 
 import Home from './containers/Home';
 import About from './containers/About';
+import History from './containers/History';
 import Awards from './containers/Awards';
 import Education from './containers/Education';
 import Experiences from './containers/Experiences';
 import Experience from './containers/Experience';
 import Interests from './containers/Interests';
 import Skills from './containers/Skills';
+import Certifications from './containers/Certifications';
+import Activities from './containers/Activities';
 
 ReactDOM.render(
     <Router history={browserHistory}>
@@ -40,6 +43,8 @@ ReactDOM.render(
               <hr class="m-0" />
               <Route path="about" component={About}/>
               <hr class="m-0" />
+              <Route path="history" component={History}/>
+              <hr class="m-0" />
               <Route path="awards" component={Awards}/>
               <hr class="m-0" />
               <Route path="education" component={Education}/>
@@ -47,46 +52,17 @@ ReactDOM.render(
               <Route path="experience" component={Experiences}/>
               <Route path="experience/:id" component={Experience}/>
               <hr class="m-0" />
+              <Route path="activities" component={Activities}/>
+              <hr class="m-0" />
               <Route path="interests" component={Interests}/>
               <hr class="m-0" />
               <Route path="skills" component={Skills}/>
+              <hr class="m-0" />
+              <Route path="certifications" component={Certifications}/>
           </div>
         </Route>
     </Router>,
     document.getElementById('root')
 );
-
-/* AS-IS */
-/*ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="about" component={About}/>
-      <Route path="post" component={Posts}>
-        <Route path=":id" component={Post}/>
-      </Route>
-    </Route>
-  </Router>,
-  document.getElementById('root')
-);*/
-
-/*
-지금은 Post 컴포넌트가 Posts 내부에 위치하게 하고 싶기 때문에 이렇게 했지만, 
-만약에 주소가 /post/:id 일 때 Posts 를 보여주지 않고 Post 만 보여주게 하고싶다면, 
-이렇게 라우트를 다음과 같이 작성하면 된답니다.
-*/
-/*
-ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home}/>
-      <Route path="about" component={About}/>
-      <Route path="post" component={Posts}/>
-      <Route path="post/:id" component={Post}/>
-    </Route>
-  </Router>,
-  document.getElementById('root')
-);
-*/
 
 serviceWorker.unregister();
