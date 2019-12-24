@@ -6,7 +6,6 @@ import ExperienceLinks from '../containers/experience/ExperienceLinks'
 import profile from '../components/img/profile.jpg';
 import '../components/css/custom.css';
 
-
 const MenuItem = ({active, children, to, id}) => (
     <Link id={id} to={to} className={(id === 'home') ? 'navbar-brand js-scroll-trigger' : 'nav-link js-scroll-trigger'}>
         {children}
