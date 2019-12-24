@@ -1,12 +1,12 @@
 import React, {Component, Fragment} from 'react';
 //import { Button } from 'reactstrap';
-import Header from './containers/Header';
+import Menu from './containers/Menu';
 
 class App extends Component{
   render() {
     return (
         <Fragment>
-            <Header/>
+            <Menu/>
             {this.props.children}
         </Fragment>
     );

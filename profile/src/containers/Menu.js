@@ -2,7 +2,8 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router';
 import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
-import ExperienceLinks from '../containers/experience/ExperienceLinks'
+import AboutLinks from './about/AboutLinks'
+import ExperienceLinks from './experience/ExperienceLinks'
 import profile from '../components/img/profile.jpg';
 import '../components/css/custom.css';
 
@@ -12,7 +13,7 @@ const MenuItem = ({active, children, to, id}) => (
     </Link>
 );
 
-const Header = (props, context) => {
+const Menu = (props, context) => {
     const { router } = context;
     return (
         <Fragment>
@@ -29,14 +30,18 @@ const Header = (props, context) => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <MenuItem to={'/about'} active={router.isActive('/about')}>About</MenuItem>
+                            <MenuItem id={'togglerAbout'}>About</MenuItem>
+                            <UncontrolledCollapse toggler="#togglerAbout">
+                                <Card className="toggle-background-style">
+                                    <CardBody className="sub-menu-style">
+                                        <AboutLinks/>
+                                    </CardBody>
+                                </Card>
+                            </UncontrolledCollapse>
                         </li>
                         <li className="nav-item">
-                            <MenuItem to={'/history'} active={router.isActive('/history')}>History</MenuItem>
-                        </li>
-                        <li className="nav-item">
-                            <MenuItem id={'toggler'}>Experience</MenuItem>
-                            <UncontrolledCollapse toggler="#toggler">
+                            <MenuItem id={'togglerExperience'}>Experience</MenuItem>
+                            <UncontrolledCollapse toggler="#togglerExperience">
                                 <Card className="toggle-background-style">
                                     <CardBody className="sub-menu-style">
                                         <ExperienceLinks/>
@@ -48,13 +53,7 @@ const Header = (props, context) => {
                             <MenuItem to={'/education'} active={router.isActive('/education')}>Education</MenuItem>
                         </li>
                         <li className="nav-item">
-                            <MenuItem to={'/skills'} active={router.isActive('/skills')}>Skills</MenuItem>
-                        </li>
-                        <li className="nav-item">
                             <MenuItem to={'/certifications'} active={router.isActive('/certifications')}>Certifications</MenuItem>
-                        </li>
-                        <li className="nav-item">
-                            <MenuItem to={'/activities'} active={router.isActive('/activities')}>Activities</MenuItem>
                         </li>
                         {/*
                         <li className="nav-item">
@@ -71,10 +70,10 @@ const Header = (props, context) => {
     );
 };
 
-Header.contextTypes = {
+Menu.contextTypes = {
     router: function () {
         return React.PropTypes.object;
     }
 }
 
-export default Header;
+export default Menu;

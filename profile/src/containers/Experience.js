@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 
-import W from './experience/w';
-import B from './experience/b';
-import K from './experience/k';
+import W from './experience/W';
+import B from './experience/B';
+import K from './experience/K';
 
 const Experience = ({params}) => {
     if(params.id === "w"){

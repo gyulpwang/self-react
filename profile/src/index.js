@@ -24,16 +24,13 @@ import './components/js/resume.min.js' // Custom scripts for this template
 import App from './App';
 
 import Home from './containers/Home';
+import Abouts from './containers/Abouts';
 import About from './containers/About';
-import History from './containers/History';
 import Awards from './containers/Awards';
 import Education from './containers/Education';
 import Experiences from './containers/Experiences';
 import Experience from './containers/Experience';
-import Interests from './containers/Interests';
-import Skills from './containers/Skills';
 import Certifications from './containers/Certifications';
-import Activities from './containers/Activities';
 
 ReactDOM.render(
     <Router history={browserHistory}>
@@ -41,9 +38,8 @@ ReactDOM.render(
           <div class="container-fluid p-0">
               <IndexRoute component={Home}/>
               <hr class="m-0" />
-              <Route path="about" component={About}/>
-              <hr class="m-0" />
-              <Route path="history" component={History}/>
+              <Route path="about" component={Abouts}/>
+              <Route path="about/:id" component={About}/>
               <hr class="m-0" />
               <Route path="awards" component={Awards}/>
               <hr class="m-0" />
@@ -51,12 +47,6 @@ ReactDOM.render(
               <hr class="m-0" />
               <Route path="experience" component={Experiences}/>
               <Route path="experience/:id" component={Experience}/>
-              <hr class="m-0" />
-              <Route path="activities" component={Activities}/>
-              <hr class="m-0" />
-              <Route path="interests" component={Interests}/>
-              <hr class="m-0" />
-              <Route path="skills" component={Skills}/>
               <hr class="m-0" />
               <Route path="certifications" component={Certifications}/>
           </div>
