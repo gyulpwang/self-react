@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
-import '../../components/css/custom.css';
+import '../components/css/custom.css';
 
-import cware from '../../components/img/about/cware.gif';
-import sku from '../../components/img/about/sku.jpg';
-import soongeui from '../../components/img/about/soongeui.png';
+import cware from '../components/img/about/cware.gif';
+import sku from '../components/img/about/sku.jpg';
+import soongeui from '../components/img/about/soongeui.png';
 
 const Career = () => {
     return (
@@ -16,7 +16,7 @@ const Career = () => {
                         <img src={cware} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">커머스웨어</h5>
-                            <p className="card-text">경력 | 2016.08 ~ 재직 중 | 사원</p>
+                            <p className="card-text">경력 | 2016.08 ~ 재직 중 | 대리</p>
                         </div>
                         <ul className="list-group list-group-flush">
                             <li className="list-group-item">Frontend 및 Backend 개발</li>

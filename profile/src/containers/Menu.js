@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import { Link } from 'react-router';
 import { UncontrolledCollapse, CardBody, Card } from 'reactstrap';
 
-import AboutLinks from './about/AboutLinks'
+import ActivityLinks from './activity/ActivityLinks'
 import ExperienceLinks from './experience/ExperienceLinks'
 import profile from '../components/img/profile.jpg';
 import '../components/css/custom.css';
@@ -30,14 +30,13 @@ const Menu = (props, context) => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <MenuItem id={'togglerAbout'}>About</MenuItem>
-                            <UncontrolledCollapse toggler="#togglerAbout">
-                                <Card className="toggle-background-style">
-                                    <CardBody className="sub-menu-style">
-                                        <AboutLinks/>
-                                    </CardBody>
-                                </Card>
-                            </UncontrolledCollapse>
+                            <MenuItem to={'/history'} active={router.isActive('/history')}>History</MenuItem>
+                        </li>
+                        <li className="nav-item">
+                            <MenuItem to={'/career'} active={router.isActive('/career')}>Career</MenuItem>
+                        </li>
+                        <li className="nav-item">
+                            <MenuItem to={'/skill'} active={router.isActive('/skill')}>Skill</MenuItem>
                         </li>
                         <li className="nav-item">
                             <MenuItem id={'togglerExperience'}>Experience</MenuItem>
@@ -50,19 +49,18 @@ const Menu = (props, context) => {
                             </UncontrolledCollapse>
                         </li>
                         <li className="nav-item">
-                            <MenuItem to={'/education'} active={router.isActive('/education')}>Education</MenuItem>
+                            <MenuItem id={'togglerActivity'}>Activity</MenuItem>
+                            <UncontrolledCollapse toggler="#togglerActivity">
+                                <Card className="toggle-background-style">
+                                    <CardBody className="sub-menu-style">
+                                        <ActivityLinks/>
+                                    </CardBody>
+                                </Card>
+                            </UncontrolledCollapse>
                         </li>
                         <li className="nav-item">
-                            <MenuItem to={'/certifications'} active={router.isActive('/certifications')}>Certifications</MenuItem>
+                            <MenuItem to={'/certification'} active={router.isActive('/certification')}>Certification</MenuItem>
                         </li>
-                        {/*
-                        <li className="nav-item">
-                            <MenuItem to={'/interests'} active={router.isActive('/interests')}>Interests</MenuItem>
-                        </li>
-                        <li className="nav-item">
-                            <MenuItem to={'/awards'} active={router.isActive('/awards')}>Awards</MenuItem>
-                        </li>
-                        */}
                     </ul>
                 </div>
             </nav>

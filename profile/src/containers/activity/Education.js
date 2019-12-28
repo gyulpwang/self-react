@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-import '../components/css/custom.css';
-import coffeam from '../components/img/project/coffeam.png';
-import kiwi from '../components/img/project/KIWI_mini.png';
+import '../../components/css/custom.css';
+import coffeam from '../../components/img/project/coffeam.png';
+import kiwi from '../../components/img/project/KIWI_mini.png';
 
 const Education = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import '../components/css/custom.css';
 
-const Certifications = () => {
+const Certification = () => {
     return (
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center">
             <div className="w-100">
@@ -52,4 +52,4 @@ const Certifications = () => {
     );
 };
 
-export default Certifications;
+export default Certification;
