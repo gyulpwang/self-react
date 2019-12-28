@@ -4,70 +4,35 @@ const Skills = () => {
     return (
         <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
             <div className="w-100">
-            <h2 className="mb-5">Skills</h2>
-
-            <div className="subheading mb-3">Programming Languages &amp; Tools</div>
-
-            보유기술	Frontend	JavaScript, jQuery, NetJS(ExtJS), HTML, CSS, ReactJS
-                        Backend	    Java, JSP, VTL
-                        Database	Oracle
-                        Tool	    Eclipse, PL/SQL Developer, Jenkins, SVN, SecureCRT, Visual Studio Code
-
-
-            <ul className="list-inline dev-icons">
-                <li className="list-inline-item">
-                <i className="fab fa-html5"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-css3-alt"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-js-square"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-angular"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-react"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-node-js"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-sass"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-less"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-wordpress"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-gulp"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-grunt"></i>
-                </li>
-                <li className="list-inline-item">
-                <i className="fab fa-npm"></i>
-                </li>
-            </ul>
-
-            <div className="subheading mb-3">Workflow</div>
-            <ul className="fa-ul mb-0">
-                <li>
-                <i className="fa-li fa fa-check"></i>
-                Mobile-First, Responsive Design</li>
-                <li>
-                <i className="fa-li fa fa-check"></i>
-                Cross Browser Testing &amp; Debugging</li>
-                <li>
-                <i className="fa-li fa fa-check"></i>
-                Cross Functional Teams</li>
-                <li>
-                <i className="fa-li fa fa-check"></i>
-                Agile Development &amp; Scrum</li>
-            </ul>
+            <h2 className="mb-5">Skills(보유기술)</h2>
+            <div className="subheading mb-3">Frontend</div>
+                <ul className="fa-ul mb-0">
+                    <li><i className="fa-li fa fa-check"></i>JavaScript</li>
+                    <li><i className="fa-li fa fa-check"></i>jQuery</li>
+                    <li><i className="fa-li fa fa-check"></i>NetJS(ExtJS)</li>
+                    <li><i className="fa-li fa fa-check"></i>HTML</li>
+                    <li><i className="fa-li fa fa-check"></i>CSS</li>
+                    <li><i className="fa-li fa fa-check"></i>ReactJS</li>
+                </ul>
+                <div className="subheading mb-3">Backend</div>
+                <ul className="fa-ul mb-0">
+                    <li><i className="fa-li fa fa-check"></i>Java</li>
+                    <li><i className="fa-li fa fa-check"></i>JSP</li>
+                    <li><i className="fa-li fa fa-check"></i>VTL</li>
+                </ul>
+                <div className="subheading mb-3">Database</div>
+                <ul className="fa-ul mb-0">
+                    <li><i className="fa-li fa fa-check"></i>Oracle</li>
+                </ul>
+                <div className="subheading mb-3">Tool</div>
+                <ul className="fa-ul mb-0">
+                    <li><i className="fa-li fa fa-check"></i>Eclipse</li>
+                    <li><i className="fa-li fa fa-check"></i>PL/SQL Developer</li>
+                    <li><i className="fa-li fa fa-check"></i>Jenkins</li>
+                    <li><i className="fa-li fa fa-check"></i>SVN</li>
+                    <li><i className="fa-li fa fa-check"></i>SecureCRT</li>
+                    <li><i className="fa-li fa fa-check"></i>Visual Studio Code</li>
+                </ul>
             </div>
         </section>
     );
